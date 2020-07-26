@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <title>Master Chess</title>
-    <script>
+<html dir='ltr' lang='en-US'>
+<head><meta charset='utf-8'/>
+<title>Master Chess</title>
+<script>
+//<![CDATA[
         var _mobile = false;
         if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) || window.location.href.match(/([?&]mobile=1(&|#|$))/i)) {
             if (!window.location.href.match(/([?&]mobile=0(&|#|$))/i)) {
@@ -11,8 +12,10 @@
                 _mobile = true;
             }
         }
+		
+		  //]]>
     </script>
-	<style>html,
+<style>html,
 body {
     height: 100%;
     width: 100%;
@@ -89,7 +92,7 @@ li {
     border-width: 2px;
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.3);
-    background-color: #609fb1;
+    background-color: #312e2b;
     transform-origin: left top 0px;
     transform: scale(1);
 }
@@ -125,7 +128,7 @@ li {
     font-size: 10px;
     padding: 0;
     margin: auto;
-    color: rgba(0, 0, 0, 0.5);
+    color: #fff;
     font-weight: 600;
     border-collapse: collapse;
 }
@@ -143,7 +146,7 @@ li {
     vertical-align: top;
     border-width: 1px;
     border-style: solid;
-    border-color: rgba(0, 0, 0, 0.25);
+    border-color: #769656;
     width: 320px;
     height: 320px;
 }
@@ -156,13 +159,13 @@ li {
 }
 
 .cb>.l {
-    background-color: rgba(255, 255, 255, 0.6);
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7));
+    
+	background-color: #eeeed2;
+    background: #eeeed2;
 }
 
-.cb>.d {
-    background-color: rgba(255, 255, 255, 0.2);
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.25));
+.cb>.d {background-color: #769656;
+    background: #769656;
 }
 
 .cb>.h2:before {
@@ -172,7 +175,7 @@ li {
     width: 32px !important;
     height: 32px !important;
     border: 4px solid #bb0000;
-    border-radius: 12px;
+    border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: inset 0px 0px 4px #bb0000;
@@ -185,7 +188,7 @@ li {
     width: 32px !important;
     height: 32px !important;
     border: 4px solid rgba(128, 0, 128, 1);
-    border-radius: 12px;
+    border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: inset 0px 0px 4px rgba(128, 0, 128, 1);
@@ -199,7 +202,7 @@ li {
     width: 32px !important;
     height: 32px !important;
     border: 4px solid rgba(0, 77, 114, 0.5);
-    border-radius: 12px;
+    border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: inset 0px 0px 4px rgba(0, 77, 114, 0.5);
@@ -212,7 +215,7 @@ li {
     width: 32px !important;
     height: 32px !important;
     border: 4px solid rgba(0, 0, 160, 1);
-    border-radius: 12px;
+    border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: inset 0px 0px 4px rgba(32, 64, 160, 1);
@@ -1126,7 +1129,6 @@ li {
     position: absolute;
     pointer-events: none;
     display: none;
-    filter: drop-shadow(-1px -1px 1px white) drop-shadow(1px 1px 1px black);
     opacity: 0.5;
     z-index: 4;
 }
@@ -1301,15 +1303,15 @@ li {
 }
 
 #icolor>div>div.l {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: #eeeed2;
 }
 
 #icolor>div>div.d {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #769656;
 }
 
 #icolor {
-    background-color: #609fb1;
+    background-color: #312e2b;
 }
 
 #cbTable.c1 {
@@ -1381,38 +1383,43 @@ li {
 }
 
 #cbTable.c3 {
-    color: #989795;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 #cbTable.c3 td.cbCell {
-    background-color: #769656;
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 #boxBoard.c3 {
-    background-color: #312e2b;
+    background-color: #609fb1;
 }
 
 #chessboard1.c3>.l {
-    background-color: #eeeed2;
-    background: #eeeed2;
+    background-color: rgba(255, 255, 255, 0.6);
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7));
 }
 
 #chessboard1.c3>.d {
-    background-color: #769656;
-    background: #769656;
+    
+    background-color: rgba(255, 255, 255, 0.2);
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.25));
 }
 
 #icolor.c3 {
-    background-color: #312e2b;
+    background-color: #609fb1;
+	
 }
 
 #icolor.c3>div>div.l {
-    background-color: #eeeed2;
+    background-color: rgba(255, 255, 255, 0.6);
+	
 }
 
 #icolor.c3>div>div.d {
-    background-color: #769656;
+    background-color: rgba(255, 255, 255, 0.2);
+	
 }
+
 
 #cbTable.c4 {
     color: #ffffff;
@@ -1789,248 +1796,248 @@ li {
     top: 0;
     left: 0;
     z-index: 6;
-}</style>
-</head>
-
+}</style></head>
 <body>
-    <div id="fen" style="display:none;">rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1</div>
-    <div id="container">
-        <div class="col left" id="colLeft">
-            <div id="logo">
-                   
-                    <div id="logotextmain">MasterChess</div>
-                    <div id="logotextsub">Professional Chess App by Prakash Raiya</div>
-                <div id="toolbar" class="toolbar">
-                    <div id="buttonBack" class="off" title="Go back">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                            <path d="M15 7H3.414l4.293-4.293a1 1 0 0 0-1.414-1.414l-6 6a1 1 0 0 0 0 1.414l6 6a1 1 0 0 0 1.414-1.414L3.414 9H15a1 1 0 0 0 0-2z" />
-                        </svg>
-                    </div>
-                    <div id="buttonForward" class="off" title="Go forward">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                            <path d="M15.707 7.293l-6-6a1 1 0 0 0-1.414 1.414L12.586 7H1a1 1 0 0 0 0 2h11.586l-4.293 4.293a1 1 0 1 0 1.414 1.414l6-6a1 1 0 0 0 0-1.414z" />
-                        </svg>
-                    </div>
-                    <div id="buttonRevert" class="off" title="Revert changes">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="16" height="16">
-                            <path d="M431.85,79.13l-433.36,433.37l433.37,431.64v-273.34c463.64,-39.79 591.66,197.22 591.66,197.22c0,0 0,-431.63 -591.66,-512.94z" />
-                        </svg>
-                    </div>
-                    <div id="buttonMenu" class="on" title="Menu">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                            <path d="M0,3c0,-0.55 0.45,-1 1,-1h14c0.55,0 1,0.45 1,1c0,0.55 -0.45,1 -1,1h-14c-0.55,0 -1,-0.45 -1,-1zM0,8c0,-0.55 0.45,-1 1,-1h14c0.55,0 1,0.45 1,1c0,0.55 -0.45,1 -1,1h-14c-0.55,0 -1,-0.45 -1,-1zM15,12c0.55,0 1,0.45 1,1c0,0.55 -0.45,1 -1,1h-14c-0.55,0 -1,-0.45 -1,-1c0,-0.55 0.45,-1 1,-1z" />
-                        </svg>
-                    </div>
-                </div>
-            </div>
-            <div id="wb"></div>
-            <div class="box" style="height:437px;min-width: 108px;min-height: 161px" id="wChessboard">
-                <div id="positionInfo" class="boxTop"></div>
-                <div id="searchWrapper" class="boxMid">
-                    <form id="simpleSearch">
-                        <input name="search" placeholder="Enter FEN, PGN or command" id="searchInput" type="search">
-                        <div id="buttonGo" title="Load FEN, PGN or command" style="display:none;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                                <path d="M15.707 7.293l-6-6a1 1 0 0 0-1.414 1.414L12.586 7H1a1 1 0 0 0 0 2h11.586l-4.293 4.293a1 1 0 1 0 1.414 1.414l6-6a1 1 0 0 0 0-1.414z" opacity="0.6" />
-                            </svg>
-                        </div>
-                    </form>
-                </div>
-                <div id="boxBoardOuter">
-                    <div id="boxBoard">
-                        <div id="boardWrapper">
-                            <div id="arrowWrapper1">
-                                <svg height="100%" width="100%">
-                                    <defs>
-                                        <marker id="markerArrow1" markerWidth="13" markerHeight="13" orient="auto" refX="3" refY="3">
-                                            <path d="M1,1 L1,5 L4,3 Z" style="fill: #000000;"></path>
-                                        </marker>
-                                    </defs>
-                                    <line style="stroke:#000000;stroke-width:6;marker-end:url(#markerArrow1);" y2="0" y1="0" x1="0" x2="0"></line>
-                                </svg>
-                            </div>
-                            <div id="arrowWrapper2">
-                                <svg height="100%" width="100%">
-                                    <defs>
-                                        <marker id="markerArrow2" markerWidth="13" markerHeight="13" orient="auto" refX="3" refY="3">
-                                            <path d="M1,1 L1,5 L4,3 Z"></path>
-                                        </marker>
-                                    </defs>
-                                    <line style="stroke-width:6;marker-end:url(#markerArrow2);" y2="0" y1="0" x1="0" x2="0"></line>
-                                </svg>
-                            </div>
-                            <div id="arrowWrapper3">
-                                <svg height="100%" width="100%">
-                                    <defs>
-                                        <marker id="markerArrow3" markerWidth="13" markerHeight="13" orient="auto" refX="3" refY="3">
-                                            <path d="M1,1 L1,5 L4,3 Z"></path>
-                                        </marker>
-                                    </defs>
-                                    <line style="stroke-width:5;marker-end:url(#markerArrow3);" y2="0" y1="0" x1="0" x2="0"></line>
-                                </svg>
-                            </div>
-                            <table id="cbTable">
-                                <tbody>
-                                    <tr>
-                                        <td></td>
-                                        <td>a</td>
-                                        <td>b</td>
-                                        <td>c</td>
-                                        <td>d</td>
-                                        <td>e</td>
-                                        <td>f</td>
-                                        <td>g</td>
-                                        <td>h</td>
-                                        <td>
-                                            <div id="buttonStm" class="white" title="Change side to move">
-                                                <div></div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td colspan="8" rowspan="8" class="cbCell">
-                                            <div id="chessboard1" class="cb"></div>
-                                        </td>
-                                        <td>8</td>
-                                    </tr>
-                                    <tr>
-                                        <td>7</td>
-                                        <td>7</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6</td>
-                                        <td>6</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>5</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>4</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>2</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td>a</td>
-                                        <td>b</td>
-                                        <td>c</td>
-                                        <td>d</td>
-                                        <td>e</td>
-                                        <td>f</td>
-                                        <td>g</td>
-                                        <td>h</td>
-                                        <td>
-                                            <div id="buttonFlip" title="Flip board">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 443 443" width="16" height="16" fill="currentColor">
-                                                    <path d="M254.56,118.55v205.9l68.77,-27.17c2.31,-0.9 4.93,-0.16 6.43,1.81c0.73,0.99 1.11,2.16 1.11,3.32c0,1.17 -0.38,2.36 -1.14,3.36l-103.85,135.08c-1.05,1.35 -2.66,2.15 -4.37,2.15c-1.71,0 -3.33,-0.8 -4.38,-2.15l-103.84,-135.08c-1.53,-1.97 -1.53,-4.69 -0.04,-6.69c1.49,-1.96 4.11,-2.7 6.42,-1.8l68.77,27.16v-205.89l-68.76,27.16c-2.31,0.9 -4.93,0.16 -6.43,-1.8c-0.74,-0.99 -1.11,-2.17 -1.11,-3.32c0,-1.17 0.38,-2.36 1.14,-3.36l103.85,-135.08c1.05,-1.35 2.66,-2.15 4.37,-2.15c1.71,0 3.33,0.8 4.38,2.15l103.83,135.08c1.52,1.97 1.54,4.69 0.04,6.68c-1.48,1.97 -4.11,2.7 -6.42,1.8z" />
-                                                </svg>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div id="materialWrapper"></div>
-                        <div id="namesWrapperTop"></div>
-                        <div id="namesWrapperBottom"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col right" id="colRight">
-            <div class="box" style="height:205px;min-height:79px;" id="wMoves">
-                <div id="movesInfo" class="boxTop"></div>
-                <div id="movesHeader">
-                    <div class="san">Move</div>
-                    <div class="eval">Evaluation</div>
-                    <div class="pv" id="buttonMovesPv">PV</div>
-                    <div class="depth">Depth</div>
-                </div>
-                <div id="moves" class="boxMid"></div>
-                <div id="movesFooter" class="footer">Powered by Prakash Raiya</div>
-            </div>
-            <div class="box" style="height:146px;" id="wHistory">
-                <div class="boxTop">History Of Moves</div>
-                <div class="boxMid" id="history"></div>
-            </div>
-            <div class="box" style="height:155px;background-color: #697686;" id="wGraph">
-                <div class="boxTop">Evaluation Graph</div>
-                <div id="graphWrapper" class="boxGraph">
-                    <canvas id="graph">Your browser does not support the HTML5 canvas tag.</canvas>
-                </div>
-            </div>
-            <div class="box" style="height:115px;min-height:79px;display:none;" id="wOpening">
-                <div class="boxTop">Opening</div>
-                <div id="openingHeader">
-                    <div class="name">ECO code / Name</div>
-                    <div class="score">Score</div>
-                    <div class="popularity">Popularity</div>
-                    <div class="moves">Moves</div>
-                </div>
-                <div id="opening" class="boxMid"></div>
-            </div>
-            <div class="box" style="height:115px;min-height:79px;display:none;" id="wStatic">
-                <div id="staticInfo" class="boxTop">Static Evaluation</div>
-                <div id="staticHeader">
-                    <div class="group">Group</div>
-                    <div class="name">Evaluation term</div>
-                    <div class="eval" id="buttonStaticSortByValue">Value</div>
-                    <div class="rel" id="buttonStaticSortByChange">Change</div>
-                </div>
-                <div id="static" class="boxMid"></div>
-            </div>
-            <div class="box" style="height:115px;min-height:79px;display:none;" id="wLczero">
-                <div id="lczeroInfo" class="boxTop">LcZero - Neural Network</div>
-                <div id="lczeroHeader">
-                    <div class="san">Move</div>
-                    <div class="policy">Policy</div>
-                    <div class="eval">Parent value</div>
-                </div>
-                <div id="lczero" class="boxMid"></div>
-                <div id="lczeroFooter" class="footer">Powered by Prakash Raiya</div>
-            </div>
-            <div class="box" style="height:122px;min-height:122px;min-width:298px;display:none;" id="wEdit">
-                <div class="boxTop">Edit tools</div>
-                <div id="editWrapperOuter" class="boxMid">
-                    <div id="editWrapper">
-                        <div class="cb">
-                            <div style="left: 0px; top: 0px;" class="l S"></div>
-                            <div style="left: 40px; top: 0px;" class="d p"></div>
-                            <div style="left: 80px; top: 0px;" class="l n"></div>
-                            <div style="left: 120px; top: 0px;" class="d b"></div>
-                            <div style="left: 160px; top: 0px;" class="l r"></div>
-                            <div style="left: 200px; top: 0px;" class="d q"></div>
-                            <div style="left: 240px; top: 0px;" class="l k"></div>
-                            <div style="left: 0px; top: 40px;" class="d -"></div>
-                            <div style="left: 40px; top: 40px;" class="l P"></div>
-                            <div style="left: 80px; top: 40px;" class="d N"></div>
-                            <div style="left: 120px; top: 40px;" class="l B"></div>
-                            <div style="left: 160px; top: 40px;" class="d R"></div>
-                            <div style="left: 200px; top: 40px;" class="l Q"></div>
-                            <div style="left: 240px; top: 40px;" class="d K"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="menu" style="display:none;"></div>
-        </div>
-    </div>
-    <div id="tooltip" style="display:none;"></div>
-    <div id="dragPiece" class="cb"></div>
-    <script>/*
+<div id='fen' style='display:none;'>rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1</div>
+<div id='container'>
+<div class='col left' id='colLeft'>
+<div id='logo'>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="64" height="64"><defs><linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="-230.4" y1="256" x2="281.6" y2="256"><stop offset="0" stop-color="#609fb1"  /><stop offset="1" stop-color="#bce8e9"  /></linearGradient><linearGradient id="grd2" gradientUnits="userSpaceOnUse"  x1="-486.4" y1="384" x2="537.6" y2="384"><stop offset="0" stop-color="#bce8e9"  /><stop offset="1" stop-color="#609fb1"  /></linearGradient></defs><style>tspan { white-space:pre }.shp0 { fill: url(#grd1) } .shp1 { fill: url(#grd2) } .shp2 { fill: #ffffff } .shp3 { fill: #000000;stroke: #000000;stroke-linecap:round;stroke-width: 21.9 } </style><path class="shp0" d="M512,256c0,-141.57 -114.43,-256 -256,-256c-141.57,0 -256,114.43 -256,256c0,141.57 114.43,256 256,256c141.57,0 256,-114.43 256,-256z" /><path class="shp1" d="M512,256h-512c0,141.57 114.43,256 256,256c141.57,0 256,-114.43 256,-256z" /><path class="shp2" d="M463.25,256c0,-114.61 -92.64,-207.25 -207.25,-207.25c-114.61,0 -207.25,92.64 -207.25,207.25c0,114.61 92.64,207.25 207.25,207.25c114.61,0 207.25,-92.64 207.25,-207.25z" /><path class="shp3" d="M257,55.83c-33.05,0 -59.83,26.77 -59.83,59.83c0,13.31 4.34,25.58 11.67,35.6c-29.17,16.75 -49.06,48.01 -49.06,84.06c0,30.36 14.06,57.43 36.05,75.23c-44.87,15.85 -110.83,83.01 -110.83,201.46h344c0,-118.46 -65.96,-185.61 -110.83,-201.46c21.99,-17.8 36.05,-44.87 36.05,-75.23c0,-36.05 -19.89,-67.3 -49.06,-84.06c7.33,-10.02 11.67,-22.29 11.67,-35.6c0,-33.05 -26.77,-59.83 -59.83,-59.83z" /></svg>
+
+<div id='logotextmain'>MasterChess</div>
+<div id='logotextsub'>Professional Chess App by Prakash Raiya</div>
+
+<div class='toolbar' id='toolbar'>
+<div class='off' id='buttonBack' title='Go back'>
+<svg height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'>
+<path d='M15 7H3.414l4.293-4.293a1 1 0 0 0-1.414-1.414l-6 6a1 1 0 0 0 0 1.414l6 6a1 1 0 0 0 1.414-1.414L3.414 9H15a1 1 0 0 0 0-2z'></path>
+</svg>
+</div>
+<div class='off' id='buttonForward' title='Go forward'>
+<svg height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'>
+<path d='M15.707 7.293l-6-6a1 1 0 0 0-1.414 1.414L12.586 7H1a1 1 0 0 0 0 2h11.586l-4.293 4.293a1 1 0 1 0 1.414 1.414l6-6a1 1 0 0 0 0-1.414z'></path>
+</svg>
+</div>
+<div class='off' id='buttonRevert' title='Revert changes' style="display: none;">
+<svg height='16' viewBox='0 0 1024 1024' width='16' xmlns='http://www.w3.org/2000/svg'>
+<path d='M431.85,79.13l-433.36,433.37l433.37,431.64v-273.34c463.64,-39.79 591.66,197.22 591.66,197.22c0,0 0,-431.63 -591.66,-512.94z'></path>
+</svg>
+</div>
+<div class='on' id='buttonMenu' title='Menu'>
+<svg height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'>
+<path d='M0,3c0,-0.55 0.45,-1 1,-1h14c0.55,0 1,0.45 1,1c0,0.55 -0.45,1 -1,1h-14c-0.55,0 -1,-0.45 -1,-1zM0,8c0,-0.55 0.45,-1 1,-1h14c0.55,0 1,0.45 1,1c0,0.55 -0.45,1 -1,1h-14c-0.55,0 -1,-0.45 -1,-1zM15,12c0.55,0 1,0.45 1,1c0,0.55 -0.45,1 -1,1h-14c-0.55,0 -1,-0.45 -1,-1c0,-0.55 0.45,-1 1,-1z'></path>
+</svg>
+</div>
+</div>
+</div>
+<div id='wb'></div>
+<div class='box' id='wChessboard' style='height:437px;min-width: 108px;min-height: 161px'>
+<div class='boxTop' id='positionInfo'></div>
+<div class='boxMid' id='searchWrapper'>
+<form id='simpleSearch'>
+<input id='searchInput' name='search' placeholder='Enter FEN, PGN or command' type='search'/>
+<div id='buttonGo' style='display:none;' title='Load FEN, PGN or command'>
+<svg height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'>
+<path d='M15.707 7.293l-6-6a1 1 0 0 0-1.414 1.414L12.586 7H1a1 1 0 0 0 0 2h11.586l-4.293 4.293a1 1 0 1 0 1.414 1.414l6-6a1 1 0 0 0 0-1.414z' opacity='0.6'></path>
+</svg>
+</div>
+</form>
+</div>
+<div id='boxBoardOuter'>
+<div id='boxBoard'>
+<div id='boardWrapper'>
+<div id='arrowWrapper1'>
+<svg height='100%' width='100%'>
+<defs>
+<marker id='markerArrow1' markerHeight='13' markerWidth='13' orient='auto' refX='3' refY='3'>
+<path d='M1,1 L1,5 L4,3 Z' style='fill: #000000;'></path>
+</marker>
+</defs>
+<line style='stroke:#000000;stroke-width:6;marker-end:url(#markerArrow1);' x1='0' x2='0' y1='0' y2='0'></line>
+</svg>
+</div>
+<div id='arrowWrapper2'>
+<svg height='100%' width='100%'>
+<defs>
+<marker id='markerArrow2' markerHeight='13' markerWidth='13' orient='auto' refX='3' refY='3'>
+<path d='M1,1 L1,5 L4,3 Z'></path>
+</marker>
+</defs>
+<line style='stroke-width:6;marker-end:url(#markerArrow2);' x1='0' x2='0' y1='0' y2='0'></line>
+</svg>
+</div>
+<div id='arrowWrapper3'>
+<svg height='100%' width='100%'>
+<defs>
+<marker id='markerArrow3' markerHeight='13' markerWidth='13' orient='auto' refX='3' refY='3'>
+<path d='M1,1 L1,5 L4,3 Z'></path>
+</marker>
+</defs>
+<line style='stroke-width:5;marker-end:url(#markerArrow3);' x1='0' x2='0' y1='0' y2='0'></line>
+</svg>
+</div>
+<table id='cbTable'>
+<tbody>
+<tr>
+<td></td>
+<td>a</td>
+<td>b</td>
+<td>c</td>
+<td>d</td>
+<td>e</td>
+<td>f</td>
+<td>g</td>
+<td>h</td>
+<td>
+<div class='white' id='buttonStm' title='Change side to move'>
+<div></div>
+</div>
+</td>
+</tr>
+<tr>
+<td>8</td>
+<td class='cbCell' colspan='8' rowspan='8'>
+<div class='cb' id='chessboard1'></div>
+</td>
+<td>8</td>
+</tr>
+<tr>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td>a</td>
+<td>b</td>
+<td>c</td>
+<td>d</td>
+<td>e</td>
+<td>f</td>
+<td>g</td>
+<td>h</td>
+<td>
+<div id='buttonFlip' title='Flip board'>
+<svg fill='currentColor' height='16' viewBox='0 0 443 443' width='16' xmlns='http://www.w3.org/2000/svg'>
+<path d='M254.56,118.55v205.9l68.77,-27.17c2.31,-0.9 4.93,-0.16 6.43,1.81c0.73,0.99 1.11,2.16 1.11,3.32c0,1.17 -0.38,2.36 -1.14,3.36l-103.85,135.08c-1.05,1.35 -2.66,2.15 -4.37,2.15c-1.71,0 -3.33,-0.8 -4.38,-2.15l-103.84,-135.08c-1.53,-1.97 -1.53,-4.69 -0.04,-6.69c1.49,-1.96 4.11,-2.7 6.42,-1.8l68.77,27.16v-205.89l-68.76,27.16c-2.31,0.9 -4.93,0.16 -6.43,-1.8c-0.74,-0.99 -1.11,-2.17 -1.11,-3.32c0,-1.17 0.38,-2.36 1.14,-3.36l103.85,-135.08c1.05,-1.35 2.66,-2.15 4.37,-2.15c1.71,0 3.33,0.8 4.38,2.15l103.83,135.08c1.52,1.97 1.54,4.69 0.04,6.68c-1.48,1.97 -4.11,2.7 -6.42,1.8z'></path>
+</svg>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id='materialWrapper'></div>
+<div id='namesWrapperTop'></div>
+<div id='namesWrapperBottom'></div>
+</div>
+</div>
+</div>
+</div>
+<div class='col right' id='colRight'>
+<div class='box' id='wMoves' style='height:205px;min-height:79px;'>
+<div class='boxTop' id='movesInfo'></div>
+<div id='movesHeader'>
+<div class='san'>Move</div>
+<div class='eval'>Evaluation</div>
+<div class='pv' id='buttonMovesPv'>PV</div>
+<div class='depth'>Depth</div>
+</div>
+<div class='boxMid' id='moves'></div>
+<div class='footer' id='movesFooter'>Powered by Prakash Raiya</div>
+</div>
+<div class='box' id='wHistory' style='height:146px;'>
+<div class='boxTop'>History Of Moves</div>
+<div class='boxMid' id='history'></div>
+</div>
+<div class='box' id='wGraph' style='height:155px;background-color: #697686;display:none;'>
+<div class='boxTop'>Evaluation Graph</div>
+<div class='boxGraph' id='graphWrapper'>
+<canvas id='graph'>Your browser does not support the HTML5 canvas tag.</canvas>
+</div>
+</div>
+<div class='box' id='wOpening' style='height:115px;min-height:79px;display:none;'>
+<div class='boxTop'>Opening</div>
+<div id='openingHeader'>
+<div class='name'>ECO code / Name</div>
+<div class='score'>Score</div>
+<div class='popularity'>Popularity</div>
+<div class='moves'>Moves</div>
+</div>
+<div class='boxMid' id='opening'></div>
+</div>
+<div class='box' id='wStatic' style='height:115px;min-height:79px;display:none;'>
+<div class='boxTop' id='staticInfo'>Static Evaluation</div>
+<div id='staticHeader'>
+<div class='group'>Group</div>
+<div class='name'>Evaluation term</div>
+<div class='eval' id='buttonStaticSortByValue'>Value</div>
+<div class='rel' id='buttonStaticSortByChange'>Change</div>
+</div>
+<div class='boxMid' id='static'></div>
+</div>
+<div class='box' id='wLczero' style='height:115px;min-height:79px;display:none;'>
+<div class='boxTop' id='lczeroInfo'>LcZero - Neural Network</div>
+<div id='lczeroHeader'>
+<div class='san'>Move</div>
+<div class='policy'>Policy</div>
+<div class='eval'>Parent value</div>
+</div>
+<div class='boxMid' id='lczero'></div>
+<div class='footer' id='lczeroFooter'>Powered by Prakash Raiya</div>
+</div>
+<div class='box' id='wEdit' style='height:122px;min-height:122px;min-width:298px;display:none;'>
+<div class='boxTop'>Edit tools</div>
+<div class='boxMid' id='editWrapperOuter'>
+<div id='editWrapper'>
+<div class='cb'>
+<div class='l S' style='left: 0px; top: 0px;'></div>
+<div class='d p' style='left: 40px; top: 0px;'></div>
+<div class='l n' style='left: 80px; top: 0px;'></div>
+<div class='d b' style='left: 120px; top: 0px;'></div>
+<div class='l r' style='left: 160px; top: 0px;'></div>
+<div class='d q' style='left: 200px; top: 0px;'></div>
+<div class='l k' style='left: 240px; top: 0px;'></div>
+<div class='d -' style='left: 0px; top: 40px;'></div>
+<div class='l P' style='left: 40px; top: 40px;'></div>
+<div class='d N' style='left: 80px; top: 40px;'></div>
+<div class='l B' style='left: 120px; top: 40px;'></div>
+<div class='d R' style='left: 160px; top: 40px;'></div>
+<div class='l Q' style='left: 200px; top: 40px;'></div>
+<div class='d K' style='left: 240px; top: 40px;'></div>
+</div>
+</div>
+</div>
+</div>
+<div id='menu' style='display:none;'></div>
+</div>
+</div>
+<div id='tooltip' style='display:none;'></div>
+<div class='cb' id='dragPiece'></div>
+<script>/*
  This file is part of Leela Chess Zero.
  Copyright (C) 2018 The LCZero Authors
 
@@ -2604,7 +2611,8 @@ function lczero_forward(input) {
     network.forward(1, input_array, policy_array, value_array);
     return [policy_array, value_array[0]];
 }</script>
-    <script>var START = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";
+
+<script>var START = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";
 var _engine, _curmoves = [];
 var _history = [
         [START]
@@ -4908,7 +4916,7 @@ function command(text) {
     } else if (text.toLowerCase().indexOf("depth ") == 0) {
         if (_engine != null && _engine.ready) {
             _engine.depth = Math.min(128, Math.max(0, parseInt(text.toLowerCase().replace("depth ", ""))));
-            if (isNaN(_engine.depth)) _engine.depth = 15;
+            if (isNaN(_engine.depth)) _engine.depth = 10;
         }
         showBoard();
         historySave();
@@ -4968,7 +4976,7 @@ function command(text) {
         var url = [location.protocol, '//', location.host, location.pathname].join('');
         var params = [];
         if (_color > 0) params.push("col" + _color);
-        if (_engine != null && _engine.ready && _engine.depth != 15) params.push("depth " + _engine.depth);
+        if (_engine != null && _engine.ready && _engine.depth != 10) params.push("depth " + _engine.depth);
         if (lparamsstr != "c m h g") params.push("layout " + (lparamsstr.length == 0 ? "-" : lparamsstr));
         if (encoded.length > 0) params.push("~" + encoded);
         else if (getCurFEN() != START) params.push(getCurFEN());
@@ -5319,7 +5327,7 @@ function repaintLastMoveArrow() {
     if (lastmove != null) {
         var elem = document.getElementById("arrowWrapper2");
         if (elem.children[0].children != null)
-            elem.children[0].children[0].children[0].children[0].style.fill = elem.children[0].children[1].style.stroke = getGraphPointColor(_historyindex);
+            elem.children[0].children[0].children[0].children[0].style.fill = elem.children[0].children[1].style.stroke = '#0000a0';
     }
     showArrow2(lastmove);
 }
@@ -7043,7 +7051,7 @@ function onKeyDown(e) {
     if (e.ctrlKey) return;
     var c = String.fromCharCode(e.keyCode || e.which).replace(" ", "-");
     if (k == 96 || k == 106) {
-        if (_engine != null && _engine.ready) command("depth " + (_engine.depth != 0 ? "0" : "15"));
+        if (_engine != null && _engine.ready) command("depth " + (_engine.depth != 0 ? "0" : "10"));
     } else if (k == 107) {
         if (_engine != null && _engine.ready) command("depth " + Math.min(128, _engine.depth + 1));
     } else if (k == 109) {
@@ -7837,7 +7845,6 @@ function showHideMenu(state, e) {
 function setBoardColor(c) {
     var count = 6;
     if (c < 0) c = count - 1;
-    if (c >= count) c = 0;
     document.getElementById("cbTable").className = "c" + c;
     document.getElementById("boxBoard").className = "c" + c;
     document.getElementById("chessboard1").className = "cb c" + c;
@@ -8541,5 +8548,4 @@ window.onload = function() {
     for (var i = 0; i < 26; i++) command(getParameterByName(String.fromCharCode("a".charCodeAt(0) + i)));
 }</script>
 </body>
-
 </html>
