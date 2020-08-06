@@ -1,9 +1,10 @@
-<html>
 
+<!DOCTYPE html>
+<html dir='ltr' lang='en-GB'>
 <head>
-  <script src="https://www.wiris.net/demo/editor/editor"></script>
-  <script>
-    var editor;
+         <script src="https://www.wiris.net/demo/editor/editor"></script>
+         <script>
+         var editor;
          var editor2;
         window.onload = function () {
           editor = com.wiris.jsEditor.JsEditor.newInstance({
@@ -18,89 +19,16 @@
     	  editor.insertInto(document.getElementById('editorContainer'));
           editor2.insertInto(document.getElementById('editorContainer2'));
         }
-    	function doSet() {
-        
-        editor.setMathML(document.getElementById('mathmlinput').value);
-        
-          // editor.setMathML("<math><mfrac><mn>1</mn><mi>x</mi></mfrac></math>");
-        }
-    	function doGet() {
-          
-        document.getElementById('mathmloutput').value = editor.getMathML();
-        // String latex = PublicServices.getInstance().mathml2latex("<math><mn>2</mn><mo>-</mo><mi>x</mi></math>", false, null);
-        // alert(editor.getMathML());
-        // alert(latex);
-        }
-        
-       
-       
-    	function doSet2() {
-        
-        editor2.setMathML(document.getElementById('mathmlinput2').value);
-        
-          // editor.setMathML("<math><mfrac><mn>1</mn><mi>x</mi></mfrac></math>");
-        }
-    	function doGet2() {
-          
-        document.getElementById('mathmloutput2').value = editor2.getMathML();
-        // String latex = PublicServices.getInstance().mathml2latex("<math><mn>2</mn><mo>-</mo><mi>x</mi></math>", false, null);
-        // alert(editor.getMathML());
-        // alert(latex);
-        }
-  </script>
-</head>
+		
+         </script>
+       </head>
+       <body>
+		 
+		 
+  <div style="width:100%;height:100%" id="editorContainer"></div>
 
+  <div style="width:100%;height:100%" id="editorContainer2"></div>
   
   
-<body>
-  <p>Math</p>
-  <div style="width:75%;height:300px" id="editorContainer"></div>
-
- 
-  <br> 
-  <div class="form-group">
-  <label class="control-label" for="focusedInput">MathML Input</label>
-  <input class="form-control" id="mathmlinput" type="text" >  <a href="#" onclick="doSet()">set</a>
-</div>
-  <br>
-  
-    <div class="form-group">
-  <label class="control-label" for="focusedInput">MathML Output</label>
-  <input class="form-control" id="mathmloutput" type="text" > <a href="#" onclick="doGet()">get</a>
-</div>
-<!--   <input id="mathmloutput2" type="text" name="firstname" value="Mickey"> -->
-  
-  <p>Chemistry</p>
-  <div style="width:75%;height:300px" id="editorContainer2"></div>
-<!--   <a href="#" onclick="doSet2()">set</a>
-  <a href="#" onclick="doGet2()">get</a> -->
-  
-   <br> 
-  <div class="form-group">
-  <label class="control-label" for="focusedInput">MathML Input</label>
-  <input class="form-control" id="mathmlinput2" type="text" >  <a href="#" onclick="doSet2()">set</a>
-</div>
-  <br>
-  
-    <div class="form-group">
-  <label class="control-label" for="focusedInput">MathML Output</label>
-  <input class="form-control" id="mathmloutput2" type="text" > <a href="#" onclick="doGet2()">get</a>
-</div>
-  
-  <br>
-    
-  <p>test</p>
-  
-  <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">H</mi><mn>2</mn><mi mathvariant="normal">O</mi></math>
-  
-  <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mi>m</mi><mo>&#xD7;</mo><msup><mi>b</mi><mn>2</mn></msup></math>
-  
-  
-  <br>
-  <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>CO</mi><mn>2</mn></msub><mo>+</mo><mi mathvariant="normal">C</mi><mo>&#xA0;</mo><mover><mo>&#x2192;</mo><mi>Above</mi></mover><mn>2</mn><mi>CO</mi></math>
-  <br>
-  <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>CO</mi><mn>2</mn></msub><mo>+</mo><mi mathvariant="normal">C</mi><mo>&#xA0;</mo><mover><mo>&#x2192;</mo><mi>Above</mi></mover><mn>2</mn><mi>CO</mi></math>
-  
-</body>
-
-</html>
+       </body>
+     </html>
