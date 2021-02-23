@@ -1,0 +1,34 @@
+{
+  "background_color": "#e3eef9",
+  "description": "Jagran Josh: Complete Career Guide for School, College and Job Finder",
+  "display": "fullscreen", 
+   "icons": [{
+            "src": "https://www.jagranjosh.com/Resources/joshMobile/LiteV/images/pwa/josh-96-96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        }, {
+            "src": "https://www.jagranjosh.com/Resources/joshMobile/LiteV/images/pwa/josh-128-128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        }, {
+            "src": "https://www.jagranjosh.com/Resources/joshMobile/LiteV/images/pwa/josh-144-144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        }, {
+            "src": "https://www.jagranjosh.com/Resources/joshMobile/LiteV/images/pwa/josh-192-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }, {
+            "src": "https://www.jagranjosh.com/Resources/joshMobile/LiteV/images/pwa/josh-256-256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        }, {
+            "src": "https://www.jagranjosh.com/Resources/joshMobile/LiteV/images/pwa/josh-512-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }],
+  "scope": "/",
+  "name": "Jagran Josh",
+  "short_name": "JagranJosh",
+  "start_url": "/?utm_source=pwa&utm_medium=direct&utm_campaign=appinstall"
+}
