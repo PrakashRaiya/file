@@ -24,7 +24,6 @@ if('serviceWorker' in navigator) {
 
 let deferredPrompt;
 const addBtn = document.querySelector('.addhomescreen');
-addBtn.style.display = 'none';
 
 window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
@@ -176,7 +175,7 @@ Answer Key
 </a>
 
 
-<a href="javascript:void(0)" class="addhomescreen">
+<a href="javascript:void(0)" class="addhomescreen" style="display:none;">
 Install App
 </a>
 
