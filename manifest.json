@@ -27,7 +27,6 @@
             "type": "image/png",
             "sizes": "512x512"
         }],
-  "scope": "/",
   "name": "Jagran Josh",
   "short_name": "JagranJosh",
   "start_url": "/?utm_source=pwa&utm_medium=direct&utm_campaign=appinstall"
