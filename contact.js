@@ -36,11 +36,11 @@ document.addEventListener('click', function (e) {
 
             let csave = document.createElement('div')
             csave.className = 'csave'
-            csave.setAttribute('style', 'padding:10px 15px;border:1px solid #b0b0b0;border-radius:5px;background:#fff;font-weight:600')
+            
 elementHeader.appendChild(csave)
 
             const lk = document.createElement('a')
-
+lk.setAttribute('style', 'padding:10px 15px;background:#fff;z-index:999;color:rgb(152,152,152);font-size:14px;font-weight:bold;position:fixed;left:2%;bottom:80%;background-color:rgb(255,255,255);border-radius:20px;box-shadow:rgb(0 0 0 / 6%) 0 1px 1px 0,rgb(0 0 0 / 20%) 0 2px 5px 0')
             lk.href = window.URL.createObjectURL(
               new Blob([documentCSV], {
                 type: "text/plain"
