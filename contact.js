@@ -1,5 +1,5 @@
 document.addEventListener('click', function (e) {
-  const linkAntigo = document.getElementsByClassName('whatsVHckl')
+  const linkAntigo = document.getElementsByClassName('csave')
   if (linkAntigo[0]) {
     linkAntigo[0].remove()
   }
@@ -34,10 +34,10 @@ document.addEventListener('click', function (e) {
 `
             }
 
-            let whatsVHckl = document.createElement('div')
-            whatsVHckl.className = 'whatsVHckl'
-            whatsVHckl.setAttribute('style', 'padding:10px 15px;border:1px solid #b0b0b0;border-radius: 5px;background:#fff;font-weight:600')
-elementHeader.appendChild(whatsVHckl)
+            let csave = document.createElement('div')
+            csave.className = 'csave'
+            csave.setAttribute('style', 'padding:10px 15px;border:1px solid #b0b0b0;border-radius:5px;background:#fff;font-weight:600')
+elementHeader.appendChild(csave)
 
             const lk = document.createElement('a')
 
@@ -49,7 +49,7 @@ elementHeader.appendChild(whatsVHckl)
             lk.setAttribute("download", `${groupName}.txt`)
             // lk.click()
             // window.URL.revokeObjectURL(lk.href)
-            whatsVHckl.append(lk)
+            csave.append(lk)
 			lk.innerHTML = "Save";
           }
         }
