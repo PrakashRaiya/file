@@ -29,11 +29,13 @@ function myFunc() {
         document.querySelector('#pane-side ._2Z4DV._2GVnY span[data-testid="default-group"][data-icon="default-group"]').removeAttribute("data-icon"), document.getElementById("Sendmessagedatabase").value += "\n" + name
     }, 200)
 }
-/*document.body.style.zoom = ".0000000001%", document.getElementById("app").style.height = "99999999999999999999%",*/ alert("Main Script Install.");
+/*document.body.style.zoom = ".0000000001%", document.getElementById("app").style.height = "99999999999999999999%",*/ function startfun() {alert("Main Script Install.");
 var x = document.createElement("textarea");
 x.id = "Sendmessagedatabase", document.body.appendChild(x);
 var scopedStyle = document.createElement("style");
-scopedStyle.innerText = "#app, body, html {overflow: auto!important;height:auto!important}textarea#Sendmessagedatabase,textarea#customconsole{position: fixed;z-index: 99999;}._1gL0z{position:initial!important;}", document.body.appendChild(scopedStyle), null != localStorage.getItem("groupnamecontent") && ("y" == (prompt("Old Database Found, for Clear type: y", "")) ? (localStorage.removeItem("groupnamecontent"), alert("All Database Clear successfully.")) : setTimeout(function () {document.getElementById("Sendmessagedatabase").value += "\n" + localStorage.getItem("groupnamecontent") }, 0));function updatedatabase() {
+scopedStyle.innerText = "#app, body, html {overflow: auto!important;height:auto!important}textarea#Sendmessagedatabase,textarea#customconsole{position: fixed;z-index: 99999;}._1gL0z{position:initial!important;}", document.body.appendChild(scopedStyle), null != localStorage.getItem("groupnamecontent") && ("y" == (prompt("Old Database Found, for Clear type: y", "")) ? (localStorage.removeItem("groupnamecontent"), alert("All Database Clear successfully.")) : setTimeout(function () {document.getElementById("Sendmessagedatabase").value += "\n" + localStorage.getItem("groupnamecontent") }, 0))};function updatedatabase() {
     var e = document.getElementById("Sendmessagedatabase");
     localStorage.setItem("groupnamecontent", e.value)
 }
+var run = document.createElement("div");
+run.innerHTML = '<a href="Javascript:startfun()" title="Run Script" style="border-radius: 4px;position: fixed;z-index: 99999;background: #d3eebe;color: #000;font-size: 12px;padding: 5px 10px;border: 1px solid #aaa;">Run Script</a>', document.body.appendChild(run);
