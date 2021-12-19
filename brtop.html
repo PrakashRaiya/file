@@ -163,24 +163,39 @@ main > div:only-child {width:100%}
 	  &nbsp;&nbsp;<div class="select">&nbsp;twidth</div>
 	  &nbsp;&nbsp;<div class="select">Today  Jan Current Affairs:<br/>https://www.fastrojgar.com/p/video.html#?u=
 <br/><br/>
-PDF Download:<br/>https://www.fastrojgar.com/p/download.html#?u=</div>
+PDF Download:<br/>https://www.fastrojgar.com/p/download.html#?u=</div>&nbsp;&nbsp;<div class="select">https://fastrojgar.com/keywords</div>&nbsp;&nbsp;<div class="select">https://fastrojgar.com/articleSection</div>
     </fieldset>
-	<br/>
-<div class='di'><input aria-label='input-url' id='inputURL' placeholder='Put Your URL' required='required' type='url'/><span class='bar'/></div><div class='clearboth'/><br/><div class='di'><input aria-label='output-url' id='resultLink' onclick='this.focus();this.select()' placeholder='Your Result' readonly='readonly' required='required' type='text'/><span class='bar'/></div>
+
 <fieldset>
       <legend>Settings</legend>
       <label><input type="checkbox" id="p" checked=""> Convert Line Break to Paragraph</label>
       <br>
-      <label><input type="checkbox" id="b" checked=""> Blogger</label>
-      <br>
+      <label><input type="checkbox" id="b" checked=""> Blogger</label><br>
+      <label><input type="checkbox" id="rclass" checked=""> Remove Class</label>
+	  <br>
       <br>
       <label><input type="text" id="x" value="span, div" placeholder="span, div"> &larr; tags to remove</label>
+	  <br/>
+  <div class="app">
+     <div class="flex">
+      <button id="upper" class="lb">UPPER CASE</button>
+      <button id="lower">lower case</button>
+      <button id="sentence">Sentence case</button>
+      <button id="title3" class="rb">Title Case</button>
+	  <button id="dash" class="rb">Dash Case</button>
+	  <button id="link" class="rb">Link</button>
+	  <button onclick="copyinput()" class="rb">Copy</button>
+    </div>
+ 
+ 
+
+  </div>
     </fieldset>
 	
     <main>
       <div>
         <fieldset>
-          <legend>Input</legend>
+          <legend>Input: <span id='charcount'>0</span> Character</legend>
           <textarea id="input"></textarea>
         </fieldset>
       </div>
@@ -188,12 +203,6 @@ PDF Download:<br/>https://www.fastrojgar.com/p/download.html#?u=</div>
         <fieldset>
           <legend>Output</legend>
           <textarea id="output"></textarea>
-        </fieldset>
-      </div>
-<div style="width: 100%;float: none;">
-        <fieldset style="margin: 0;">
-          <legend>Character Count: <span id='charcount'>0</span> Character</legend>
-          <textarea id="textcountbox" onkeyup="charcountupdate(this.value)" style="min-height: 15em;"></textarea>
         </fieldset>
       </div>
 
@@ -204,12 +213,7 @@ PDF Download:<br/>https://www.fastrojgar.com/p/download.html#?u=</div>
       <iframe id="view"></iframe>
     </fieldset>
     <script>
-	function charcountupdate(str) {
-	var lng = str.length;
-	document.getElementById("charcount").innerHTML = lng;
-}
-
-	(function(w, d) {
+(function(w, d) {
 
 var IGNORE = 'h[1-6]|kbd|math|pre|script|style|textarea',
     I = 'a|abbr|acronym|b|basefont|bdo|big|blink|button|cite|code|del|dfn|em|font|i|img|input|ins|kbd|listing|mar(?:k|quee)|nextid|nobr|q|r[pt]|ruby|s|samp|select|small|spacer|span|strike|strong|su[bp]|svg|textarea|time|tt|u|var|w?br|xm',
@@ -351,7 +355,11 @@ function validate(text) {
 	text = text.replace(/ style=(\'|\")([ -0-9a-zA-Z:]*[ 0-9a-zA-Z;]*)*\1/g,"");
 	text = text.replace(/ width=(\'|\")([ -0-9a-zA-Z:]*[ 0-9a-zA-Z;]*)*\1/g,"");
 	text = text.replace(/ valign=(\'|\")([ -0-9a-zA-Z:]*[ 0-9a-zA-Z;]*)*\1/g,"");
-    // remove `border` and `type` attribute
+	text = text.replace(/ colspan=(\'|\")([ -0-9a-zA-Z:]*[ 0-9a-zA-Z;]*)*\1/g,"");
+	text = text.replace(/ contenteditable=(\'|\")([ -0-9a-zA-Z:]*[ 0-9a-zA-Z;]*)*\1/g,"");
+	text = text.replace(/ dir=(\'|\")([ -0-9a-zA-Z:]*[ 0-9a-zA-Z;]*)*\1/g,"");
+	if (rclass.checked){text = text.replace(/ class="(.*?)"/g, "");}
+	// remove `border` and `type` attribute
     text = text.replace(/ (frame)?border="\d+"| type="text\/(css|javascript)"/g, "");
     text = text.replace(/ (frame)?border='\d+'| type='text\/(css|javascript)'/g, "");
     return text;
@@ -424,30 +432,6 @@ b.onchange = run;
 })(window, document);
 </script>
 
-<style>	.th {font-weight: 600;}
-td,th{padding:10px}td,th{border:1px solid #959595}.table{display:block;overflow-y:hidden;overflow-x:auto;scroll-behavior:smooth;}table{border-collapse:collapse;border-spacing:0;width: 100%;
-    text-align:center;}
-</style><script>
-function generateCode(t){for(rowcount=document.CodeGenerator.RowCount.value,columncount=document.CodeGenerator.ColumnCount.value,displaysampletext=document.CodeGenerator.DisplaySampleText.checked,tablerows="  <tbody>\n",tablehead="  <thead>\n    <tr>\n",tableheadtext="",tabletext="      <td></td>\n",thisRow=1;thisRow<=rowcount;thisRow++){for(tablerows+="    <tr>\n",thisColumn=1;thisColumn<=columncount;thisColumn++)1==thisRow&&("1"==displaysampletext?tableheadtext+="      <th>Header</th>\n":tableheadtext+="      <th></th>\n"),"1"==displaysampletext&&(tabletext="      <td>Cell</td>\n"),tablerows+=tabletext;tablerows+="    </tr>\n"}return tablehead=tablehead+tableheadtext+"    </tr>\n  </thead>\n",tablerows+="  </tbody>\n",output8='<div class="table">\n<table border="1" style="width:100%;border-collapse:collapse;border-spacing:0;">\n'+tablehead+tablerows+"</table>\n</div>\n\n",document.CodeGenerator.generatedCode.value=output8,document.getElementById("displayResult").innerHTML=output8,output8}
-</script>
-<form name="CodeGenerator" id="CodeGenerator">
-
-    <div class="codeGenerator">
-        <div class="toolBar">
-            
-            <label title="Not including the header row">Rows: <input name="RowCount" value="3" type="text" size="2" maxlength="2" onkeyup="javascript:generateCode();"/></label>
-            <label>Columns: <input name="ColumnCount" value="3" type="text" size="2" maxlength="2" onkeyup="javascript:generateCode();"/></label>	
-            
-        <p onclick="generateCode();"><input name="DisplaySampleText" type="checkbox" value="Yes"/> Display Sample Text</p>
-<textarea name="generatedCode" class="generatedCode" onclick="this.focus();this.select()" style="min-height: 20em;"
-></textarea>
-        </div><br/>
-        <div class="preview">
-            <div id="displayResult">
-            </div></div>
-    </div>
-</form>
-<script>document.getElementsByTagName('body').onload = generateCode();</script><br/>
 <p><strong>Enter Sharing Link:</strong></p>
 			<input type="url" id="gdinput" name="gdinput" value=""/>
 			<button role="button" id="btn">Generate</button>
@@ -456,7 +440,7 @@ function generateCode(t){for(rowcount=document.CodeGenerator.RowCount.value,colu
 		
 		<p><strong>Direct Download Link:</strong></p>
 		
-			<input type="text" id="gdoutput" name="gdoutput" value=""/ >
+			<input type="text" id="gdoutput" name="gdoutput" value=""/>
 			
 			<button role="button" id="open">Open Link</button>
 			<button role="button" id="copy">Copy</button>
@@ -483,7 +467,7 @@ btn.onclick= function(){
                     	break;
                 	out+=c[i];
             	}
-		var pre="https://drive.google.com/uc?export=download&id=";
+		var pre="https://www.fastrojgar.com/p/view.html?m=1#?u=";
         	out=pre+out;
 		document.getElementById("gdoutput").value=out;
 		return;
@@ -498,7 +482,7 @@ btn.onclick= function(){
                     break;
                 out+=c[i];
             }
-            var pre="https://drive.google.com/uc?export=download&id=";
+            var pre="https://www.fastrojgar.com/p/view.html?m=1#?u=";
         	out=pre+out;
 		document.getElementById("gdoutput").value=out;
 		return;
@@ -528,27 +512,7 @@ document.execCommand('copy');
 }
 </script>
 
-<script>
-var output2=document.getElementById("resultLink"),input2=document.getElementById("inputURL");input2.onkeyup=function(){""!=input2.value?output2.value="https://fastsl.blogspot.com/?m=1&amp;u="+encodeURIComponent(this.value):output2.value=""};
 
-</script><br/>
-  <div class="app">
-     <div class="flex">
-      <button id="upper" class="lb">UPPER CASE</button>
-      <button id="lower">lower case</button>
-      <button id="sentence">Sentence case</button>
-      <button id="title3" class="rb">Title Case</button>
-      
-    </div>
-       <textarea id="text" placeholder="Paste your text here and click one of the buttons above..." style="
-padding: 10px;
-    font-size: 20px;
-    font-weight: bold;
-"></textarea>
- 
- 
-
-  </div>
   <script>
 const TitleCase = (string) => {
       var result = [];
@@ -586,7 +550,7 @@ const SentenceCase = (string) => {
 
     };
 
-var memo = document.getElementById("text");
+var memo = document.getElementById("input");
 
 document.getElementById("lower").addEventListener("click", function(){
   memo.value = memo.value.toLowerCase();
@@ -595,6 +559,12 @@ document.getElementById("lower").addEventListener("click", function(){
 document.getElementById("upper").addEventListener("click", function(){
   memo.value = memo.value.toUpperCase();
 });
+document.getElementById("dash").addEventListener("click", function(){
+  memo.value = memo.value.replace(/\s/g, "-");
+});
+document.getElementById("link").addEventListener("click", function(){
+  memo.value = "https://fastsl.blogspot.com/?m=1&amp;u="+encodeURIComponent(memo.value);
+});
 
 document.getElementById("sentence").addEventListener("click", function(){
   memo.value = SentenceCase(memo.value);
@@ -602,6 +572,13 @@ document.getElementById("sentence").addEventListener("click", function(){
 
 document.getElementById("title3").addEventListener("click", function(){
   memo.value = TitleCase(memo.value);
-});</script>
+});
+
+function copyinput(){document.getElementById("input").select(),document.execCommand("copy")}
+
+
+var input22=document.getElementById("input");input22.onkeyup=function(){document.getElementById("charcount").innerHTML = input22.value.length;};
+
+</script>
   </body>
 </html>
