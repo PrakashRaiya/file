@@ -320,11 +320,11 @@ fetch("https://freshrojgar.com/feed/?orderby=modified")
 
 
 <div class='widget'>
-<h2 class='clmhead'>rkalert</h2>
+<h2 class='clmhead'>jobrasta</h2>
 <div class='postlink new-updates12'>
 
 <script>
-fetch("https://rkalert.in/feed/?orderby=modified")
+fetch("https://jobrasta.com/feed/?orderby=modified")
   .then(response => response.text())
   .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
   .then(data => {
@@ -338,6 +338,86 @@ fetch("https://rkalert.in/feed/?orderby=modified")
       `;
     });
     document.querySelector(".postlink.new-updates12").innerHTML = "<ul>" + html + "</ul>";
+  });
+</script>
+
+</div>
+</div>
+
+
+
+<div class='widget'>
+<h2 class='clmhead'>haryanajobs</h2>
+<div class='postlink new-updates13'>
+
+<script>
+fetch("https://haryanajobs.in/feed/?orderby=modified")
+  .then(response => response.text())
+  .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+  .then(data => {
+    const items = data.querySelectorAll("item");
+    let html = ``;
+    items.forEach(el => {
+      html += `<li>
+            <a href="${el.querySelector("link").innerHTML}" target="_blank" rel="nofollow noreferrer noopener external">
+              ${el.querySelector("title").innerHTML}
+            </a></li>
+      `;
+    });
+    document.querySelector(".postlink.new-updates13").innerHTML = "<ul>" + html + "</ul>";
+  });
+</script>
+
+</div>
+</div>
+
+
+
+<div class='widget'>
+<h2 class='clmhead'>sarkarijobcity</h2>
+<div class='postlink new-updates14'>
+
+<script>
+fetch("https://sarkarijobcity.in/feed/?orderby=modified")
+  .then(response => response.text())
+  .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+  .then(data => {
+    const items = data.querySelectorAll("item");
+    let html = ``;
+    items.forEach(el => {
+      html += `<li>
+            <a href="${el.querySelector("link").innerHTML}" target="_blank" rel="nofollow noreferrer noopener external">
+              ${el.querySelector("title").innerHTML}
+            </a></li>
+      `;
+    });
+    document.querySelector(".postlink.new-updates14").innerHTML = "<ul>" + html + "</ul>";
+  });
+</script>
+
+</div>
+</div>
+
+
+<div class='widget'>
+<h2 class='clmhead'>onlineforms</h2>
+<div class='postlink new-updates15'>
+
+<script>
+fetch("https://onlineforms.in/feed/?orderby=modified")
+  .then(response => response.text())
+  .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+  .then(data => {
+    const items = data.querySelectorAll("item");
+    let html = ``;
+    items.forEach(el => {
+      html += `<li>
+            <a href="${el.querySelector("link").innerHTML}" target="_blank" rel="nofollow noreferrer noopener external">
+              ${el.querySelector("title").innerHTML}
+            </a></li>
+      `;
+    });
+    document.querySelector(".postlink.new-updates15").innerHTML = "<ul>" + html + "</ul>";
   });
 </script>
 
