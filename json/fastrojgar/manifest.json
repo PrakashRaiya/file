@@ -1,1 +1,61 @@
-{"name":"Fast Rojgar","short_name":"Fast Rojgar","start_url":"https://www.fastrojgar.com/?m=1","display":"standalone","background_color":"#eeeeee","theme_color":"#eeeeee","description":"Fast Rojgar provides you all the latest RojgarResult, online forms in various fields like Bank, SSC, Navy and more Sarkari Jobs at one place.","icons":[{"src":"https://1.bp.blogspot.com/-CgqphLqwAKY/X_wplcreAKI/AAAAAAAAAAw/CLXA2aJM30Yzobh69XeFR009UGi0rjs8gCLcBGAsYHQ/s48/fastrojgar.png","sizes":"48x48","type":"image/png"},{"src":"https://1.bp.blogspot.com/-CgqphLqwAKY/X_wplcreAKI/AAAAAAAAAAw/CLXA2aJM30Yzobh69XeFR009UGi0rjs8gCLcBGAsYHQ/s72/fastrojgar.png","sizes":"72x72","type":"image/png"},{"src":"https://1.bp.blogspot.com/-CgqphLqwAKY/X_wplcreAKI/AAAAAAAAAAw/CLXA2aJM30Yzobh69XeFR009UGi0rjs8gCLcBGAsYHQ/s96/fastrojgar.png","sizes":"96x96","type":"image/png"},{"src":"https://1.bp.blogspot.com/-CgqphLqwAKY/X_wplcreAKI/AAAAAAAAAAw/CLXA2aJM30Yzobh69XeFR009UGi0rjs8gCLcBGAsYHQ/s144/fastrojgar.png","sizes":"144x144","type":"image/png"},{"src":"https://1.bp.blogspot.com/-CgqphLqwAKY/X_wplcreAKI/AAAAAAAAAAw/CLXA2aJM30Yzobh69XeFR009UGi0rjs8gCLcBGAsYHQ/s168/fastrojgar.png","sizes":"168x168","type":"image/png"},{"src":"https://1.bp.blogspot.com/-CgqphLqwAKY/X_wplcreAKI/AAAAAAAAAAw/CLXA2aJM30Yzobh69XeFR009UGi0rjs8gCLcBGAsYHQ/s192/fastrojgar.png","sizes":"192x192","type":"image/png","purpose":"maskable"},{"src":"https://1.bp.blogspot.com/-CgqphLqwAKY/X_wplcreAKI/AAAAAAAAAAw/CLXA2aJM30Yzobh69XeFR009UGi0rjs8gCLcBGAsYHQ/s512/fastrojgar.png","sizes":"512x512","type":"image/png"}]}
+{
+  "name": "Fast Rojgar",
+  "short_name": "Fast Rojgar",
+  "start_url": "https://www.fastrojgar.com/",
+  "display": "standalone",
+  "background_color": "#eeeeee",
+  "theme_color": "#ffffff",
+  "description": "Fast Rojgar is a hindi job portal which provides best details of all Sarkari Exams, Sarkari Result, Sarkari Yojana and Sarkari Jobs at one place.",
+  "lang": "hi",
+  "icons": [
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAIHx87kQbP4Mbhj44jQTnhGkY2v6YHyr7D308dZu5HtYZ7e8LiFisBzxPKDGFNP21i4LmS34N4F4qip0MvZPzgTIKVcAbQT_o3DjsiOLhW43gQaJzxN5_Nn1MAdsV0KHlHoRIoGaC4tqr1RXVIXO61d8Wx8mH3FSX0Vg7yo5jRNZ07PnFPSU7IxPB_w/s36/Fast%20Rojgar.png",
+      "sizes": "36x36",
+      "type": "image/png",
+      "density": "0.75",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAIHx87kQbP4Mbhj44jQTnhGkY2v6YHyr7D308dZu5HtYZ7e8LiFisBzxPKDGFNP21i4LmS34N4F4qip0MvZPzgTIKVcAbQT_o3DjsiOLhW43gQaJzxN5_Nn1MAdsV0KHlHoRIoGaC4tqr1RXVIXO61d8Wx8mH3FSX0Vg7yo5jRNZ07PnFPSU7IxPB_w/s48/Fast%20Rojgar.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "density": "1.0",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAIHx87kQbP4Mbhj44jQTnhGkY2v6YHyr7D308dZu5HtYZ7e8LiFisBzxPKDGFNP21i4LmS34N4F4qip0MvZPzgTIKVcAbQT_o3DjsiOLhW43gQaJzxN5_Nn1MAdsV0KHlHoRIoGaC4tqr1RXVIXO61d8Wx8mH3FSX0Vg7yo5jRNZ07PnFPSU7IxPB_w/s72/Fast%20Rojgar.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "density": "1.5",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAIHx87kQbP4Mbhj44jQTnhGkY2v6YHyr7D308dZu5HtYZ7e8LiFisBzxPKDGFNP21i4LmS34N4F4qip0MvZPzgTIKVcAbQT_o3DjsiOLhW43gQaJzxN5_Nn1MAdsV0KHlHoRIoGaC4tqr1RXVIXO61d8Wx8mH3FSX0Vg7yo5jRNZ07PnFPSU7IxPB_w/s96/Fast%20Rojgar.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "density": "2.0",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAIHx87kQbP4Mbhj44jQTnhGkY2v6YHyr7D308dZu5HtYZ7e8LiFisBzxPKDGFNP21i4LmS34N4F4qip0MvZPzgTIKVcAbQT_o3DjsiOLhW43gQaJzxN5_Nn1MAdsV0KHlHoRIoGaC4tqr1RXVIXO61d8Wx8mH3FSX0Vg7yo5jRNZ07PnFPSU7IxPB_w/s144/Fast%20Rojgar.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "density": "3.0",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAIHx87kQbP4Mbhj44jQTnhGkY2v6YHyr7D308dZu5HtYZ7e8LiFisBzxPKDGFNP21i4LmS34N4F4qip0MvZPzgTIKVcAbQT_o3DjsiOLhW43gQaJzxN5_Nn1MAdsV0KHlHoRIoGaC4tqr1RXVIXO61d8Wx8mH3FSX0Vg7yo5jRNZ07PnFPSU7IxPB_w/s192/Fast%20Rojgar.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "density": "4.0",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAIHx87kQbP4Mbhj44jQTnhGkY2v6YHyr7D308dZu5HtYZ7e8LiFisBzxPKDGFNP21i4LmS34N4F4qip0MvZPzgTIKVcAbQT_o3DjsiOLhW43gQaJzxN5_Nn1MAdsV0KHlHoRIoGaC4tqr1RXVIXO61d8Wx8mH3FSX0Vg7yo5jRNZ07PnFPSU7IxPB_w/s512/Fast%20Rojgar.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "density": "4.5",
+      "purpose": "any maskable"
+    }
+  ]
+}
