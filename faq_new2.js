@@ -166,7 +166,7 @@ function json_ld_script(){
   var quesArray = [];
   jQuery( ".form" ).each(function( index ) {
     var childtest = jQuery(this).children();
-htmlplus=htmlplus +'<section class="sc_fs_faq sc_card"><div><h2>'+childtest[0].value+'</h2><div><p>'+childtest[1].value+'</p></div></div></section>';
+htmlplus=htmlplus +'<section class="sc_fs_faq sc_card"><div><h'+document.getElementById("inputhead").value+'>'+childtest[0].value+'</h'+document.getElementById("inputhead").value+'><div><p>'+childtest[1].value+'</p></div></div></section>';
 
     quesArray.push({
       '@type': 'Question',
