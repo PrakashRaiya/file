@@ -1,0 +1,68 @@
+{
+  "name": "PM Yojana Check",
+  "short_name": "PM Yojana Check",
+  "start_url": "https://www.pmyojanacheck.in/",
+  "display": "standalone",
+  "background_color": "#eeeeee",
+  "theme_color": "#ffffff",
+  "description": "PM Yojana Check: Your trusted source for Sarkari Yojana updates, application guides, and benefits of government schemes.",
+  "lang": "hi",
+  "icons": [
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWSyI8epwSH_ByE4DndoV83FyWH1N1llSTqXyd8hYlmeShbxe8vbACKeHTdxVZ8R97m0v2fRplfWHK_hjTNqN3TNUfT5rWGvRSi_KsN0dV1wdurMDppUjZdT33y_2UC6XLU5VaETtgFr3d35pzImu_zA2pD7MVHnPE8bg_0QeSrzaJBzKgShL0k_wj_Jk/s36-e90/pm_yojana_check.png",
+      "sizes": "36x36",
+      "type": "image/png",
+      "density": "0.75",
+      "purpose": "any"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWSyI8epwSH_ByE4DndoV83FyWH1N1llSTqXyd8hYlmeShbxe8vbACKeHTdxVZ8R97m0v2fRplfWHK_hjTNqN3TNUfT5rWGvRSi_KsN0dV1wdurMDppUjZdT33y_2UC6XLU5VaETtgFr3d35pzImu_zA2pD7MVHnPE8bg_0QeSrzaJBzKgShL0k_wj_Jk/s48-e90/pm_yojana_check.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "density": "1.0",
+      "purpose": "any"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWSyI8epwSH_ByE4DndoV83FyWH1N1llSTqXyd8hYlmeShbxe8vbACKeHTdxVZ8R97m0v2fRplfWHK_hjTNqN3TNUfT5rWGvRSi_KsN0dV1wdurMDppUjZdT33y_2UC6XLU5VaETtgFr3d35pzImu_zA2pD7MVHnPE8bg_0QeSrzaJBzKgShL0k_wj_Jk/s72-e90/pm_yojana_check.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "density": "1.5",
+      "purpose": "any"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWSyI8epwSH_ByE4DndoV83FyWH1N1llSTqXyd8hYlmeShbxe8vbACKeHTdxVZ8R97m0v2fRplfWHK_hjTNqN3TNUfT5rWGvRSi_KsN0dV1wdurMDppUjZdT33y_2UC6XLU5VaETtgFr3d35pzImu_zA2pD7MVHnPE8bg_0QeSrzaJBzKgShL0k_wj_Jk/s96-e90/pm_yojana_check.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "density": "2.0",
+      "purpose": "any"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWSyI8epwSH_ByE4DndoV83FyWH1N1llSTqXyd8hYlmeShbxe8vbACKeHTdxVZ8R97m0v2fRplfWHK_hjTNqN3TNUfT5rWGvRSi_KsN0dV1wdurMDppUjZdT33y_2UC6XLU5VaETtgFr3d35pzImu_zA2pD7MVHnPE8bg_0QeSrzaJBzKgShL0k_wj_Jk/s144-e90/pm_yojana_check.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "density": "3.0",
+      "purpose": "any"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWSyI8epwSH_ByE4DndoV83FyWH1N1llSTqXyd8hYlmeShbxe8vbACKeHTdxVZ8R97m0v2fRplfWHK_hjTNqN3TNUfT5rWGvRSi_KsN0dV1wdurMDppUjZdT33y_2UC6XLU5VaETtgFr3d35pzImu_zA2pD7MVHnPE8bg_0QeSrzaJBzKgShL0k_wj_Jk/s192-e90/pm_yojana_check.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "density": "4.0",
+      "purpose": "any"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWSyI8epwSH_ByE4DndoV83FyWH1N1llSTqXyd8hYlmeShbxe8vbACKeHTdxVZ8R97m0v2fRplfWHK_hjTNqN3TNUfT5rWGvRSi_KsN0dV1wdurMDppUjZdT33y_2UC6XLU5VaETtgFr3d35pzImu_zA2pD7MVHnPE8bg_0QeSrzaJBzKgShL0k_wj_Jk/s192-e90/pm_yojana_check.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "density": "4.0",
+      "purpose": "maskable"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWSyI8epwSH_ByE4DndoV83FyWH1N1llSTqXyd8hYlmeShbxe8vbACKeHTdxVZ8R97m0v2fRplfWHK_hjTNqN3TNUfT5rWGvRSi_KsN0dV1wdurMDppUjZdT33y_2UC6XLU5VaETtgFr3d35pzImu_zA2pD7MVHnPE8bg_0QeSrzaJBzKgShL0k_wj_Jk/s512-e90/pm_yojana_check.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "density": "4.5",
+      "purpose": "any"
+    }
+  ]
+}
